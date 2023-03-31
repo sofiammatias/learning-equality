@@ -1,21 +1,19 @@
 # Learning Equality challenge
 
-The goal of this competition is to streamline the process of **matching educational content to specific topics** in a curriculum. To achieve that, an accurate and efficient model needs to be developed and trained 
-on a library of K-12 educational materials that have been organized into a variety of topic taxonomies. 
+<img height="300" alt="book-shelf2" src="https://user-images.githubusercontent.com/114782592/229075107-5d85c58a-41a1-49cb-b4ac-48a833080fbf.jpg">
+
+The goal of this competition from Kaggle is to streamline the process of **matching educational content to specific topics** in a curriculum. To achieve that, an accurate and efficient model needs to be developed and trained on a library of K-12 educational materials that have been organized into a variety of topic taxonomies. 
 
 These materials are in diverse languages, and cover a wide range of topics, particularly in STEM (Science, Technology, Engineering, and Mathematics).
 
-The dataset presented is drawn from the Kolibri Studio curricular alignment tool, in which users can create their own channel, then build out a topic tree that represents a curriculum taxonomy or other hierarchical structure, and finally organize content items into these topics, by uploading their own content and/or importing existing materials from the Kolibri Content Library of Open Educational Resources.
+The dataset presented is drawn from the Kolibri Studio curricular alignment tool, in which users can create their own channel, then build out a topic tree that represents a curriculum taxonomy or other hierarchical structure, and finally organize content items into these topics, by uploading their own content and/or importing existing materials from the Kolibri Content Library of Open Educational Resources. The leaf topic in this branch might then contain (be correlated with) a content item such as a video entitled Polar Coordinates.
 
-An example of a branch of a topic tree is: 
+The goal is to **predict which content items are best aligned to a given topic** in a topic tree, with the goal of matching the selections made by curricular experts and other users of the Kolibri Studio platform. In other words, your goal is to recommend content items to curators for potential inclusion in a topic, to reduce the time they spend searching for and discovering relevant content to consider including in each topic.
 
-```bash
-Secondary Education >> Ordinary Level >> Mathematics >> Further Learning >> Activities >> Trigonometry.
-```
+Read more about the challenge description [here](https://www.kaggle.com/competitions/learning-equality-curriculum-recommendations)
 
-The leaf topic in this branch might then contain (be correlated with) a content item such as a video entitled Polar Coordinates.
+**Ranked #841 among 1,058 participants.**
 
-The goal is to predict which content items are best aligned to a given topic in a topic tree, with the goal of matching the selections made by curricular experts and other users of the Kolibri Studio platform. In other words, your goal is to recommend content items to curators for potential inclusion in a topic, to reduce the time they spend searching for and discovering relevant content to consider including in each topic.
 
 The full test set includes an additional 10,000 topics (none present in the training set) and a large number of additional content items. The additional content items are only correlated to test set topics.
 
